@@ -1,0 +1,238 @@
+
+/* ---------------------------------------
+
+    Lingering modes of [DOM] existence:
+      Being/doing modular.
+
+----------------------------------------- */
+
+/* ---------------------------------------
+
+    Prepping to respond to those screens. 
+      ... so many screens.
+
+----------------------------------------- */
+@-o-viewport {
+  width: device-width;
+}
+@-ms-viewport {
+  width: device-width;
+}
+@viewport {
+  width: device-width;
+}
+
+html {
+  overflow-y: auto;
+}
+
+img,
+audio,
+video,
+canvas {
+  max-width: 100%;
+}
+canvas#tenPrint {
+  border: 0px none; 
+  image-rendering: -moz-crisp-edges ! important;
+  border-radius: 14px;
+  -moz-border-radius: 14px;
+  margin-top: 3.33%;
+}
+
+/* ---------------------------------------
+
+"Mobile first" boundary-making practices
+----------------------------------------- */
+
+.container {
+  /*
+    Meet "max-width," the site governer
+  */
+	max-width:1080px;
+	width:90%;
+	margin:0px auto;
+	position: relative;
+}
+
+.row {
+  clear: both;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 98%;
+  }
+
+  .mod-1,
+  .mod-2,
+  .mod-3,
+  .mod-4,
+  .mod-5,
+  .mod-6,
+  .mod-half,
+  .mod-full,
+  .mod-unit {
+    float: left;
+    width:96.969696969697%;
+    margin:0 1.515151515152% 1em;
+    border-radius: 14px;
+    -moz-border-radius: 14px;
+  }
+
+  .gallery .mod-unit,
+  .mod-half {
+    width:46.969696969697%;
+    margin: 0 1.515151515152% 1em;
+  }
+
+  .mod-flow-opposite{
+    float:right
+  }
+
+}
+
+@media screen and (min-width: 640px) {
+  .mod-1     { width: 13.636363636364%; }
+  .mod-2     { width: 30.30303030303%; }
+  .mod-3,
+  .mod-half  { width: 46.969696969697%; }
+  .mod-4     { width: 63.636363636364%; }
+  .mod-5     { width: 80.30303030303%; }
+  .mod-6,
+  .mod-full  { width: 96.969696969697%;border-radius: 14px;-moz-border-radius: 14px;}
+
+  .gallery .mod-unit {
+    width: 30.30303030303%;
+  }
+
+  .content-pad-right {
+    padding-right: 4%; /* Use (or don't) as necessary. */
+  }
+
+  .content-pad-left {
+    padding-left: 4%;
+  }
+
+}
+
+/* Using N. Gallagher's Micro Clearfix
+    http://nicolasgallagher.com/micro-clearfix-hack/
+-------------------------------------------------------------- */
+.cf:before, .cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+.cf { zoom:1; } /* For IE 6/7 (trigger hasLayout) */
+
+/* Main Layout
+-------------------------------------------------------------- */
+body {
+  font: 100%/1.5 sans-serif;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+footer {
+  font-size: 0.9em;
+  border-top: 1px solid #ccc;
+  padding: 0.5em 0 2.5em;
+}
+.footer-umn {
+  width: 37px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.footer-cc {
+  width: 70px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.footer-itin {
+  width: 85px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.footer-twt {
+  width: 27px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+.footer-acad {
+  width: 35px;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+}
+
+/* < div IDs >
+-------------------------------------------------------------- */
+blockquote,p#notes {
+  text-align: left;
+  margin-left: 1%;
+}
+p#footnote {
+  text-align: left;
+  margin-left: 1%;
+  font-size: small;
+}
+
+/* Typography
+-------------------------------------------------------------- */
+.heading {
+  font-size: 3em;
+  margin: 0;
+}
+
+.sub-heading {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #0024d9;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #0B3C47;
+}
+
+.superscript{font-size:x-small; vertical-align:top;}
+
+/* Elements
+-------------------------------------------------------------- */
+figure {
+  margin: 0;
+  background: #f8f8f8;
+}
+
+figcaption {
+  padding: 0.5em 1em 1em;
+  font-size: 0.875em;
+}
+
+code {
+  padding: 0.5em;
+  background: #0024d9;
+  color: #fff;
+}
+blockquote {
+  border-left: 5px solid #0024d9;
+  padding: 0em 1em;
+  margin: 1em 3em;
+  text-indent: 0em !important;
+}
+
+/* Helpers
+-------------------------------------------------------------- */
+.show-mod div[class*='mod-'] {
+  background-color: #B8E9F4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
