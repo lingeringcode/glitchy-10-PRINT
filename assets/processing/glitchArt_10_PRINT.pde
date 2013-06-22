@@ -20,7 +20,7 @@ void draw() {
   glitchy+=(ten[print]);
   text(glitchy,random(15),random(8),w,w/2);
 }
-void keyPressed() {
+void mousePressed() {
     glitchy="";
     background(#0024d9);
 }
