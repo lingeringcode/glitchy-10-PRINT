@@ -18,7 +18,9 @@ void draw() {
   background(#0024d9);
   fill(#ffffff);
   glitchy+=(ten[print]);
-  if(glitchy.length()>=w) {
-    text(glitchy,random(15),random(8),w,w/2);
-  }
+  text(glitchy,random(15),random(8),w,w/2);
+}
+void keyPressed() {
+    glitchy="";
+    background(#0024d9);
 }
