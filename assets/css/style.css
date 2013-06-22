@@ -49,10 +49,10 @@ canvas#tenPrint {
   /*
     Meet "max-width," the site governer
   */
-	max-width:1080px;
-	width:90%;
-	margin:0px auto;
-	position: relative;
+  max-width:1080px;
+  width:90%;
+  margin:0px auto;
+  position: relative;
 }
 
 .row {
@@ -100,10 +100,16 @@ canvas#tenPrint {
   .mod-4     { width: 63.636363636364%; }
   .mod-5     { width: 80.30303030303%; }
   .mod-6,
-  .mod-full  { width: 96.969696969697%;border-radius: 14px;-moz-border-radius: 14px;}
+  .mod-full  { 
+    background-color: #B8E9F4;
+    width: 96.969696969697%;
+    border-radius: 14px;
+    -moz-border-radius: 14px;
+  }
 
   .gallery .mod-unit {
     width: 30.30303030303%;
+    z-index: 0;
   }
 
   .content-pad-right {
@@ -204,12 +210,11 @@ a:hover {
 -------------------------------------------------------------- */
 figure {
   margin: 0;
-  background: #f8f8f8;
 }
 
 figcaption {
-  padding: 0.5em 1em 1em;
-  font-size: 0.875em;
+  padding: 0.5em 0em 1em;
+  font-size: 0.85em;
 }
 
 code {
@@ -227,12 +232,14 @@ blockquote {
 /* Helpers
 -------------------------------------------------------------- */
 .show-mod div[class*='mod-'] {
-  background-color: #B8E9F4;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: block;
   padding: 0.5em 1em;
   margin-bottom: 1em;
+}
+
+.centered {
   text-align: center;
 }
