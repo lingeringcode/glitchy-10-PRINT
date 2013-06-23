@@ -1,3 +1,4 @@
+
 /* ---------------------------------------------
 
     Lingering modes of [DOM] existence:
@@ -229,6 +230,10 @@ blockquote {
   margin: 1em 3em;
   text-indent: 0em !important;
 }
+hr {
+  width:75%;
+  color:#0024d9;
+}
 
 /* Helpers
 -------------------------------------------------------------- */
@@ -243,4 +248,7 @@ blockquote {
 
 .centered {
   text-align: center;
+}
+.trans {
+  width:300px;
 }
