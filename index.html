@@ -5,18 +5,22 @@
 	<title>//@lndgrn | glitchy 10 PRINT</title>
 	<link rel="icon" type="image/gif" href="assets/img/favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta name="keyword" content="rhetoric, digital rhetoric, writing studies, composition, new media,
-		rhetoric of code, rhetoric of software, software studies, literacies, code literacies, procedural 
-		literacy, proceduracy, research methodologies, history of computing, user experience, UX, UI, 
+	<meta name="keyword" content="10 PRINT, rhetoric, digital rhetoric, writing studies, 
+		composition, new media, rhetoric of code, rhetoric of software, software 
+		studies, literacies, code literacies, procedural literacy, proceduracy, 
+		research methodologies, history of computing, user experience, UX, UI, 
 		usability, technical writing, technical communication" />
 	<meta name="description" content="chris lindgren's glitched 10 PRINT" />
 	<!-- stylesheets -->
 	<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 	<!-- javascripts -->
-	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-	<script type="application/javascript" src="js/jquery.js"></script>
-	<script type="application/javascript" src="js/processing.1.4.1.min.js"></script>
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+	</script><![endif]-->
+	<script type="application/javascript" src="js/jquery.js">
+	</script>
+	<script type="application/javascript" src="js/processing.1.4.1.min.js">
+	</script>
 </head>
 
 <body>
@@ -24,90 +28,127 @@
 		<div class="container">
 			<section id="introp" class="cf">
 				<div class="mod-full">
-					<h1 class="heading">//<a href="https://twitter.com/lndgrn" target="_blank">@lndgrn</a> | glitchy <code>10 PRINT</code></h1>
-					<h3>GOTO <a href="http://clindgrencv.com">chris lindgren</a> || PhD student in Writing Studies, University of Minnesota</h3>
+					<h1 class="heading">//<a href="https://twitter.com/lndgrn" 
+						target="_blank">@lndgrn</a> | glitchy <code>10 PRINT</code></h1>
+					<h3>GOTO <a href="http://clindgrencv.com">chris lindgren</a> || PhD student in Writing 
+						Studies, University of Minnesota</h3>
 				</div>
 			</section>
 
 			<section id="mod" class="clearfix">
 				<div class="row">
 	 			    <div class="mod-full centered">
-	 			    	<canvas id="tenPrint" data-src="assets/processing/glitchArt_10_PRINT.pde" tabindex="0" width="350" height="200">
+	 			    	<canvas id="tenPrint" data-src="assets/processing/glitchArt_10_PRINT.pde" tabindex="0"
+	 			    	 width="350" height="200">
 						</canvas>
 						<p>
 							Click on the blue screen to see a new iteration.
 						</p>
 						<p>
-							the book: <cite><a href="http://10print.org/" target="_link">10 PRINT CHR$(205.5+RND(1)); : GOTO 10</a></cite>&sup1;
+							the book: <cite><a href="http://10print.org/" target="_link">10 PRINT CHR$(205.5+RND(1
+							)); : GOTO 10</a></cite>&sup1;
 							<br />
-							my review: <a href="http://www.enculturation.net/10-print" target="_blank">Enculturation.net</a>
+							my review: <a href="http://www.enculturation.net/10-print" target="_blank">
+							Enculturation.net</a>
 							<br />
 							<a href="assets/processing/glitchArt_10_PRINT.pde">the processing code</a>
 							<br />
 						</p>
 						<p id="notes">
-							When this code is executed, the images rendered on the screen will vary from machine to machine. The assemblage of machine(s) and software(s) interpret the glitchy text, which is stored within the String array, <code>ten[]</code>. The <code>draw()</code> function loops through the code, pseudorandomly selecting one of the following string literals: <code>"╱","╲","▔","▁","◝ّّّّّّّّّّ̛̖͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͇͇͇͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͉͉͉͉͉͉͉͉͉͉̓̄̅͛͛͛̚"</code>.
+							When this code is executed, the images rendered on the screen will vary from machine 
+							to machine. The assemblage of machine(s) and software(s) interpret the glitchy text, 
+							which is stored within the String array, <code>ten[]</code>. The <code>draw()</code> 
+							function loops through the code, pseudorandomly selecting one of the following string 
+							literals: <code>String[]ten={ "╱","╲","▔","▁","◝ّّّّّّّّّّ̛̖͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͇͇͇͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͈͉͉͉͉͉͉͉͉͉͉̓̄̅͛͛͛̚" };</code>.
 						</p>
 						<p id="notes">
-							Depending on the assemblage of hardware and software, it may render long, vertical, text-based lines, streaming down the canvas (Fig. 1), or long, horizontal, text-based lines across the screen (Fig. 2), or such an assemblage may be unable to render the abnormal text—even still in variety of ways (Figs. 3 and 4).
+							Depending on the assemblage of hardware and software, it may render long, vertical, 
+							text-based lines, streaming down the canvas (Fig. 1), or long, horizontal, text-based 
+							lines across the screen (Fig. 2), or such an assemblage may be unable to render the 
+							abnormal text—even still in variety of ways (Figs. 3 and 4).
 						</p>
 						<blockquote>
-							╱╱╲╲ "Porting, "an act of translation and adaptation... reveals what in a program is particular to its source context" (p. 61).
+							╱╱╲╲ "Porting, "an act of translation and adaptation... reveals what in a program is 
+							particular to its source context" (p. 61).
 							<br />
-							╱╱╲╲ “the ethos of adaptation will vary from project to project and programmer to programmer” (p. 52).
+							╱╱╲╲ “the ethos of adaptation will vary from project to project and programmer to 
+							programmer” (p. 52).
 						</blockquote>
+						<p id="notes">
+
+						</p>
 						<br />
 						<hr>
 						<br />
-						<div class="mod-2 trans">
-							<figure>
-								<img src="assets/img/g10-ubuntu.jpeg" alt="glitchy 10 PRINT operating in Ubuntu 12.04 OS" />
-								<figcaption><code>Figure 1. Ubuntu 12.04 in Firefox</code></figcaption>
-							</figure>
+						<div class="mod-full">
+							<div class="mod-2 ">
+								<figure>
+									<img src="assets/img/g10-ubuntu.jpeg" alt="glitchy 10 PRINT operating in Ubuntu 
+									12.04 OS" />
+									<figcaption><code>Figure 1. Ubuntu 12.04 in Firefox</code>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="mod-2 ">
+								<figure>
+									<img src="assets/img/g10-iOS6.jpeg" alt="glitchy 10 PRINT operating in iPhone 
+									iOS6">
+									<figcaption><code>Figure 2. Apple iOS6 in Safari</code>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="mod-2 ">
+								<figure>
+									<img src="assets/img/g10-android.jpeg" alt="glitchy 10 PRINT operating in Android 
+									Ice Cream Sandwich OS">
+									<figcaption><code>Figure 3. Android OS in Dolphin</code>
+									</figcaption>
+								</figure>
+							</div>
 						</div>
-						<div class="mod-2 trans">
-							<figure>
-								<img src="assets/img/g10-iOS6.jpeg" alt="glitchy 10 PRINT operating in iPhone iOS6">
-								<figcaption><code>Figure 2. Apple iOS6 in Safari</code></figcaption>
-							</figure>
+						<div class="mod-full">
+							<div class="mod-2 ">
+								<figure>
+									<img src="assets/img/g10-fire-skitch.jpeg" alt="glitchy 10 PRINT operating in 
+									Kindle Fire's Skitch screen capture app" />
+									<figcaption><code>Figure 4. Kindle Fire in Skitch screen capture app</code>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="mod-2 ">
+								<figure>
+									<img src="assets/img/g10-github.jpg" alt="glitchy 10 PRINT source code rendered 
+									in Github's file viewer window" />
+									<figcaption><code>Figure 5. The .pde source code rendered in Github's file viewer 
+										window in Firefox.</code>
+									</figcaption>
+								</figure>
+							</div>
+							<div class="mod-2 ">
+								<figure>
+									<img src="assets/img/g10-PDE-firefox.jpeg" alt="glitchy 10 PRINT operating in 
+									Kindle Fire's Skitch screen capture app" />
+									<figcaption><code>Figure 6. The .pde source code rendered in Firefox.</code>
+									</figcaption>
+								</figure>
+							</div>
 						</div>
-						<div class="mod-2 trans">
-							<figure>
-								<img src="assets/img/g10-android.jpeg" alt="glitchy 10 PRINT operating in Android Ice Cream Sandwich OS">
-								<figcaption><code>Figure 3. Android OS in Dolphin</code></figcaption>
-							</figure>
-						</div>
-						<div class="mod-2 trans">
-							<figure>
-								<img src="assets/img/g10-fire-skitch.jpeg" alt="glitchy 10 PRINT operating in Kindle Fire's Skitch screen capture app" />
-								<figcaption><code>Figure 4. Kindle Fire in Skitch screen capture app</code></figcaption>
-							</figure>
-						</div>
-	 			    	<div class="mod-full">
-		 			    	<p id="footnote">
-								<img src="assets/img/footnote-partition.png" alt="footnote partition">
-								<br />
-								&sup1; Montfort, N., P. Baudoin, J. Bell, I. Bogost, J. Douglass, M.C. Marino, M. Mateas, C. Raes, M. Sample, & N. Vawter. (2012). <cite>10 PRINT CHR$(205.5+RND(1)); : GOTO 10</cite>. Cambridge, Mass: MIT Press.
-							</p>
+	 			    <div class="mod-full">
+		 			   	<p id="footnote">
+							<img src="assets/img/footnote-partition.png" alt="footnote partition">
+							<br />
+							&sup1; Montfort, N., P. Baudoin, J. Bell, I. Bogost, J. Douglass, M.C. Marino, M. 
+							Mateas, C. Raes, M. Sample, & N. Vawter. (2012). <cite>10 PRINT CHR$(205.5+RND(1)); : 
+							GOTO 10</cite>. Cambridge, Mass: MIT Press.
+						</p>
 						</div>
 					</div>
 				</div>
 			</section>
 			<footer class="mod-full">
-				<p> 
-					<a href="http://www.writingstudies.umn.edu" target="_blank">
-						<img class="footer-umn" alt="UMN" src="assets/img/umn.jpeg" />
-					</a>
-					<img class="footer-cc" alt="Creative Commons" src="assets/img/cc-lic.jpeg" />
-					<a href="http://itineration.org" target="_blank">
-						<img class="footer-itin" alt="Itineration" src="assets/img/itin.png" />
-					</a>
-					<a href="http://twitter.com/lndgrn" target="_blank">
-					<img class="footer-twt" alt="@lndgrn on Twitter" src="assets/img/twitter.jpeg" />
-					</a>
-				</p>
 				<p>
-					╱╱╲╱╱╲╲<a class="superscript" href="http://clindgrencv.com">GOTO clindgrencv.com</a>╱╱╲╱╱╲╲
+					╱╱╲╱╱╲╲<a class="superscript" href="http://clindgrencv.com">GOTO clindgrencv.com</a>╱╱╲╱╱
+					╲╲
 			  	</p>
 			</footer>
 		</div> <!-- main .container -->

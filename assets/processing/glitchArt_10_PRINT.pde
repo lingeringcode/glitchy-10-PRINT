@@ -18,7 +18,7 @@ void draw() {
   background(#0024d9);
   fill(#ffffff);
   glitchy+=(ten[print]);
-  text(glitchy,random(15),random(8),w,w/2);
+  text(glitchy,random(10),random(10),w,w/2);
 }
 void mousePressed() {
     glitchy="";
